@@ -1,0 +1,976 @@
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* ESTILOS PARA BOTONES */
+.botonbusqueda {
+    color: #ffffff; 
+    background-color: #757575; 
+    border: 2px solid #ffffff; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.botonbusqueda:hover {
+    background-color: #ffffff; 
+}   
+
+
+.botonesdiv {
+    position: relative;
+    top: 80%;
+    left: 80%;
+    
+}
+#botoninicioba2{
+    background: #000000;
+    
+    color: #c50bda;
+   
+    border: 4px solid #d900ff;
+   
+    padding: 16px 20px;
+    border-radius: 3px;
+   
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 10%;
+
+}
+
+.botonescomoleones {
+    background: #000000;
+    
+    color: #c50bda;
+   
+    border: 4px solid #d900ff;
+   
+    padding: 16px 20px;
+    border-radius: 3px;
+   
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 30px;
+
+}
+.botonescomoleon{
+    background: #000000;
+    
+    color: #c50bda;
+    
+    border: 4px solid #d900ff;
+    
+    padding: 16px 150px;
+    border-radius: 3px;
+   
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 30px;
+    
+}
+
+.botonescomoleones:hover {
+    color: #fff;
+    
+}
+
+.botonescomoleones::after {
+    content: "";
+    background: #c706c4;
+    
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.botonescomoleones:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+/* FIN ESTILOS PARA BOTONES */
+
+
+/* FUENTES EXTERNAS */
+@font-face {
+    font-family: 'paternak';
+    src: url('fuentes/fuentepatarnakam.ttf') format('truetype');
+
+}
+
+#dck{
+    /* ESTILO FUENTE EXTERNA DESCARGADA */
+    font-family: 'paternak';
+    src: url('fuentes/fuentepatarnakam.ttf') format('truetype');
+    margin-top: 15px;
+   
+}
+/* FIN FUENTES  */
+
+/* ESTILOS PARA LOS TITULOS */
+
+#titulotitulo {
+    font-family: paternak;
+    color: #ffffff;
+
+    font-size: 60px;
+}
+
+#titulotitulo2 {
+    font-family: paternak;
+    color: #00c8ff;
+    font-size: 60px;
+}
+#titulob {
+    text-align: center;
+    margin-top: 4%;
+    background-color: #ae00ff;
+    
+
+}
+#titulo {
+    text-align: center;
+
+    color: aliceblue;
+}
+.titulofront{
+    width: 20%;
+
+}
+.titulofront h2{
+    /* PARA AÑADIR UN FUENTE EXTERNA DESCARGADA */
+    font-family: 'paternak';  
+    src: url('fuentes/fuentepatarnakam.ttf') format('truetype');
+
+    color: #000000;
+    border-bottom: 8px solid #e100ff;
+    font-size: 45px;
+    
+}
+/* FIN ESTILO PARA LOS TITULOS */
+
+/* MEDIDAS PARA EL BANNER INICIO */
+#bannerinicio {
+    
+    width: 70%;
+    height: 70%;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+/* TAMAÑO PARA LOS LOGOS */
+.logosdentro {
+    width: 210px;
+    margin-left: 2%;
+}
+
+/* MEDIDAS PARA EL DIV DE LOS LOGOS */
+#logosbanner {
+    margin-top: 3%;
+    background-color: #a9a9a9ef;
+    width: 55%;
+    height: 55%;
+    border: 6px solid #000000;
+    position: absolute;
+    left: 0;
+    border-radius: 80px;
+    box-shadow: 0px 9px 16px rgb(243, 1, 247);
+    
+}
+
+.logosdentro:hover {
+    transform: scale(1.1);
+}
+
+#logogem {
+
+    position: absolute;
+    left: 80%;
+    width: 600px;
+    top: -20px;
+    
+}
+
+
+#banner {
+    width: 1000px;
+
+    margin: 0 auto;
+    margin-bottom: 18%;
+}
+
+/* ESTILOS PARA LOS CONTENEDORES MAIN */
+#contenedorbanner {
+    background-image: url('img/fondo7.jpg');
+    background-size: cover; 
+    background-position: center;
+    
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+    border-bottom: 4px solid #e100ff;
+
+}
+/* SECCION DE CONTENEIDOR DE LOS BUSCADORES */
+#buscadores {
+    background-image: url('img/fondoblanco.jpg');
+    background-size: cover; 
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    
+
+
+
+}
+/* FIN ESTILOS PARA LOS CONTENEDORES */
+
+/* ESTILOS DE FUENTE PARA TITULO */
+#bus {
+    margin-top: 2%;
+    font-family: 'paternak';
+    src: url('fuentes/fuentepatarnakam.ttf') format('truetype');
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    border-bottom: 6px solid #e100ff; /*AÑADIMOS BORDES CON COLOR*/
+    
+}
+/* TAMAÑO DE LAS IMAGENES DEL CONTENEDOR */
+#contenedorbanner img {
+    max-width: 100%;
+
+    max-height: 100%;
+    
+
+}
+
+
+/* IMAGEN TAMAÑO GOOGLE */
+#google {
+    width: 110px;
+}
+
+/* ESTILOS BOTONES DE DESPLAZAMIENTO DEL carrousell */
+#anterior {
+    background-color: rgba(0, 47, 255, 0.532);
+    
+}
+#siguiente {
+    background-color: rgba(0, 102, 255, 0.644);
+}
+
+/* ESTILOS PARA CAROUSELL  BOTON*/
+.carousel-inner{
+    width: 90%;
+    height: 90%;
+}
+
+.carousel-control-prev {
+    color: #000000;
+    background-color: #000000;
+    margin-right: 80px; 
+}
+
+
+
+
+/* FIN ESTILOS BOTONES DE DESPLAZAMIENTO DEL carrousell */
+
+
+
+#googleinfo {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    
+}
+/* ESTILOS PARA LA CABEZERA */
+
+.cabezera {
+    background-color: rgb(0, 0, 0);
+    padding: 8px 0;
+    
+    
+    color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(135, 135, 136, 0.2);
+    font-size: 30px;
+    width: 100%;
+    
+}
+.cabezera nav {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+	background:#000000;
+    border-bottom: 2px solid #e100ff;
+    
+}
+header nav ul {
+	overflow:hidden;
+	list-style:none;
+    
+}
+
+header nav ul li {
+	float:left;
+}
+
+header nav ul li a {
+	color:#fff;
+	padding:20px;
+	display:block;
+	text-decoration:none;
+}
+
+header nav ul li span {
+	margin-right:10px;
+}
+
+header nav ul li a:hover {
+	background:#db13d1;
+}
+section {
+	padding:20px;
+}
+
+/* FIN DE LOS ESTILOS PARA LA CABEZERA */
+
+
+
+
+
+#logo {
+    width: 50px;
+
+}
+
+#nav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    font-weight: bold;
+}
+
+
+/* CONTENDOR DE LOS BUSCADORES ESTILOS  */
+/* ESTILO DE BORDES, COLOR DE FONDO, Y COLOCACION DEL CONTENEDOR */
+.formulariocaja {
+    border: 2px solid rgb(187, 0, 255);
+    
+    background-color: rgba(96, 96, 96, 0.144);
+    color: rgb(0, 0, 0);
+    padding: 70px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    margin: 30px;
+    text-align: left;
+    overflow-y: auto;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 40%;
+    margin-top: 1%;
+    height: 60%;
+    
+    font-weight: bold;
+
+    box-shadow: 0px 9px 16px rgb(243, 1, 247);
+
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.tarjeta-container {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.tarjeta {
+    flex: 1;
+    margin: 0 5px;
+    
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* ESTILOS PARA LAS DIFERENCIAD DEL CONTENEDOR DEL FRONTBACK */
+#Frontback {
+    background-image: url('img/fondoblanco.jpg');
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+    border-top: 4px solid #e100ff;
+
+}
+
+
+/* DAMOS ESTILO Y TAMAÑO  AL CONTENEDOR*/
+
+.contenedorfront{
+    background-color: rgba(96, 96, 96, 0.144);
+    width: 70%;
+    height: 70%;
+    border: 8px solid #e100ff;
+    border-radius: 40px;
+    box-shadow: 0px 9px 16px rgb(243, 1, 247);
+}
+
+
+/* FIN ESTILOS PARA LAS DIFERENCIAD DEL CONTENEDOR DEL FRONTBACK */
+
+
+
+#texto {
+    padding: 2%;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+
+
+/* PONEMOS QUE SE ACTIVE SI HACE FALTA LA BARRA DE DESPLAZAMIENTO */
+.front,
+.back {
+    overflow-y: auto;
+
+}
+
+
+/* ALINEMOS Y DAMOS ESTILO A LOS BOTONES , COLOR ,BORDES Y BCKGROUND */
+.botonesacarinf{
+    float: right;
+    margin-top: 2%;
+    margin-right: 2%;
+    background: #000000;
+   
+    color: #c50bda;
+   
+    border: 4px solid #d900ff;
+}
+
+/* ALINEAMOS EL CONTENEDOR Y LE PONEMOS QUE LA BARRA DE DESPLAZAMIENTO SE ACTIVE SI HACE FALTA */
+.contenedorfront{
+    font-size: 30px;
+    text-align: center;
+    overflow-y: auto;
+    
+    
+}
+/* TAMAÑO Y BORDES MARCADOS */
+#fronvsbakc{
+    width: 40%;
+    border: 4px solid #000000;
+}
+
+/* ESTILO PARA TARJETA DE DEFINICION DE FRONT */
+.frontDefinicion{
+    background-color: #adaaaf8a;
+    overflow-y: auto;
+    width: 41%;
+    float: left;
+    height: 85%;
+    margin-left: 2%;
+    margin-top: 3%;
+    border: 3px solid black;
+    text-align: center;
+    
+    
+
+}
+
+/* ESTILOS PARA TARJETA DE DEFINICION DE BACK */
+.backdefinicion{
+    background-color: #adaaaf8a;
+    overflow-y: auto;
+    width: 46%;
+    height: 85%;
+    float: right;
+    margin-right: 2%;
+    margin-top: 3%;
+    border: 2px solid rgb(199, 199, 199);
+    overflow-y: auto;
+    border: 3px solid black;
+    margin-left: 1%;
+    text-align: center;
+    
+    
+
+}
+
+/* ESTILOS PARA EL CONTENDOR DE DIFERENCIAS ENTRE UNO Y OTRO */
+.diferenciasbackfront{
+    display: none;
+    background-color: rgba(229, 229, 229, 0.379);
+    width: 70%;
+    height: 70%;
+    border: 8px solid rgb(234, 8, 223);
+    overflow-y: auto;
+    font-size: 25px;
+    border-radius: 30px;
+    
+}
+#imgfb{
+    /* LE PONEMOS A LA IMAGEN LOS LOS BORDES MARCADOS Y QUE LAS ESQUINAS SEAN CURVAS */
+    border: 4px solid black;
+    border-radius: 90px;
+}
+
+/* ESTILOS PARA SCROLLBAR */
+
+::-webkit-scrollbar-track {
+    background-color: rgb(84, 84, 84);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(59, 88, 235);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #696969;
+}
+
+/* FIN ESTILOS CROSSBAR */
+
+/* INICIO responsive */
+/* RESPONSIVE PARA MOVIL */
+@media (min-width: 360px) and (max-width: 768px) {
+
+
+    #diferenciasfbend{
+        font-size: 20px;
+    }
+    .contenedorfront{
+        width: 100%;
+        height: 90%;
+    }
+    .botoninicioba{
+        font-size: 10px;
+    }
+
+    .principalcontent{
+        margin-top: 1200px;
+    }
+
+    #titulotitulo{
+        font-size: 30px;
+    }
+    #titulotitulo2{
+        font-size: 30px;
+    }
+    #Frontback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+   
+    .titulofront {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    
+    .contenedorfront {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+   
+    #fronvsbakc {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    
+    P {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    
+    .botonesacarinf {
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin: 10px 0;
+    }
+
+    
+    .diferenciasbackfront {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        padding: 20px;
+    }
+
+   
+    .frontDefinicion,
+    .backdefinicion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+   
+    #imgfb {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+        width: 40px;
+    }
+
+   
+    .formulariocaja {
+        width: 80%;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+    }
+
+    
+    #bus {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    
+    
+    .titulofront h2 {
+        display: inline-block;
+        
+    }
+
+
+    /* OCULTAMOS  LOGOS BANNER CUANDO LA PANTALLA SE HAGA MAS PEQUEÑA */
+    #logosbanner {
+        display: none;
+    }
+
+    /* TAMAÑO FIGURA GEOMETRICA */
+    #logogem{
+
+        width: 30%;
+    }
+
+    /* DIMENSIONES DE LA CABEZARA */
+    .cabezera{
+        font-size: 10px;
+        width: 100%;
+    }
+
+    /* POSICION PARA LOS BOTONES DEL DIV */
+    .botonesdiv{
+        position: relative;
+    top: 10%;
+    left: 0%;
+    
+    
+
+    
+    }
+    /* tamño para los botones frontbak */
+    .botonescomoleon{
+       width: 50%;
+       
+       
+       font-size: 15px;
+    }
+    /* estilo para botones mejores buscadores */
+    .botonescomoleones{
+        width: 50%;
+        font-size: 10px;
+        
+    }
+    
+}
+
+/* FIN INICIO RESPONSIVE PARA MOVIL */
+
+/* INICIO ESTILOS RESPONSIVE PARA TABLETS */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #titulotitulo{
+        font-size: 40px;
+    }
+    #titulotitulo2{
+        font-size: 40px;
+    }
+    #Frontback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        
+    }
+    #titulosbanner{
+
+        font-size: 10px;
+    }
+    .botonesdiv{
+        position: relative;
+    top: 20%;
+    left: 0%;
+
+    
+    }
+    .botonescomoleones{
+        width: 30%;
+        font-size: 10px;
+    }
+    .cabezera{
+        font-size: 20px;
+    }
+    
+    .titulofront {
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+
+    .contenedorfront {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+   
+    #fronvsbakc {
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+   
+    P {
+        margin: 20px 0;
+    }
+
+   
+    .botonesacarinf {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    
+    .diferenciasbackfront {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logogem{
+        width: 20%;
+    }
+    #carouselExample{
+        margin-top: 80%;
+    }
+    #botoninicioba{
+        font-size: 10px;
+        width: 10px;
+    }
+
+    
+    .frontDefinicion,
+    .backdefinicion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    
+    #imgfb {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+    
+    #logosbanner{
+        display: none;
+    }
+    .formulariocaja{
+        width: 80%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    #bus{
+        font-size: 40px;
+    }
+    .titulofront h2 {
+        display: inline-block;
+        
+    }
+    .titulofront{
+        width: 80%;
+    }
+    
+}
+/* FIN ESTILO RESPONSIVE PARA TABLETAS */
+
+/* INICIO RESPONSIVE PARA ORDEMADOR */
+
+@media (min-width: 1024px) and (max-width: 2200px) {
+
+
+    
+    #Frontback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        
+    }
+
+   
+    .titulofront {
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+
+   
+    .contenedorfront {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    #fronvsbakc {
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+    
+    P {
+        margin: 20px 0;
+    }
+
+   
+    .botonesacarinf {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    
+    .diferenciasbackfront {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #logogem{
+        display: none;
+    }
+
+    
+    .frontDefinicion,
+    .backdefinicion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    
+    #imgfb {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+    
+    #logosbanner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-y: auto;
+    }
+    
+    .logosdentro {
+        max-width: 100%;
+        height: auto;
+        margin: 10px; 
+    }
+    .formulariocaja{
+        width: 80%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    #bus{
+        font-size: 40px;
+    }
+    .titulofront h2 {
+        display: inline-block;
+        
+    }
+    .titulofront{
+        width: 80%;
+    }
+}
+/*  FIN DEL RESPONSIVE PARA ORDENADORES */
+
+
